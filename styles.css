@@ -1,0 +1,118 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+.dashboard-grid {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 7fr;
+    height: 100%;
+}
+
+.sidebar {
+    grid-row: 1/3;
+    display: grid;
+    grid-template-rows: 1fr 5fr;
+    background-color: rgb(67, 190, 231);
+
+    color: white;
+    padding: 15px;
+    justify-content: start;
+    font-weight: bold;
+    min-width: 170px;
+}
+
+a {
+    color: white;
+    text-decoration: none
+}
+
+ul li {
+    list-style-type: none;
+    padding-bottom: 8px;
+}
+
+.sidebar ul li:nth-child(7) {
+    margin-top: 30px;
+}
+
+.main-content {
+    display: grid;
+    grid-template: 1fr 1fr / 1fr 1fr;
+    gap: 6px;
+    padding-left: 30px;
+    padding-bottom: 10px;
+    box-shadow: 10px 0 5px -2px #888;
+}
+
+.intro {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+.intro img {
+    grid-row: 1/3;
+}
+
+.intro span {
+    font-weight: bold;
+}
+
+.action-buttons {
+    align-content: center;
+    justify-content: end;
+}
+
+.action-buttons button {
+    background-color: rgb(67, 190, 231);
+    color: white;
+    border-radius: 15px;
+    border: 1px rgb(67, 190, 231);
+    padding: 5px 20px;
+    margin-right: 10px;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    justify-content: flex-end;
+}
+
+.search-bar {
+    align-self: center;
+}
+
+.projects-section {
+    background-color: rgb(237, 237, 237);
+
+}
+
+.projects-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    padding: 15px;
+    gap: 20px;
+}
+
+.projects {
+    grid-row: 1/3;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.project-card {
+    background-color: white;
+}
+
+.trending,
+.announcements {
+    background-color: white;
+}
